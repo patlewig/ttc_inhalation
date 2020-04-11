@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_201" class="java.beans.XMLDecoder">
+ <object class="toxTree.tree.UserDefinedTree" id="UserDefinedTree0">
+  <void id="CategoriesList0" property="categories">
+   <void property="storage">
+    <void method="add">
+     <object class="toxTree.tree.categories.DefaultClass1" id="DefaultClass10">
+      <void property="selected">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="toxTree.tree.categories.DefaultClass2" id="DefaultClass20"/>
+    </void>
+   </void>
+  </void>
+  <void property="explanation">
+   <string>Empty decision tree</string>
+  </void>
+  <void id="DecisionNodesList0" property="rules">
+   <void property="list">
+    <void method="add">
+     <object class="toxTree.tree.DecisionNode" id="DecisionNode0">
+      <void property="ID">
+       <string>0</string>
+      </void>
+      <void property="categories">
+       <void index="0">
+        <object idref="DefaultClass20"/>
+       </void>
+       <void index="1">
+        <object idref="DefaultClass10"/>
+       </void>
+      </void>
+      <void property="explanation">
+       <string>Alkyl carbamate and thiocarbamate</string>
+      </void>
+      <void property="num">
+       <int>1</int>
+      </void>
+      <void property="rule">
+       <object class="toxtree.plugins.ames.rules.SA16_gen" id="SA16_gen0">
+        <void property="ID">
+         <string>0</string>
+        </void>
+        <void property="num">
+         <int>1</int>
+        </void>
+        <void id="LinkedHashMap0" property="smartsPatterns">
+         <void method="get">
+          <string>3</string>
+          <void property="smarts">
+           <string>[NX3]([CX4&amp;!R,#1, S])([CX4&amp;!R,#1])C(=[O,S])[O,S][#6,N,#1]</string>
+          </void>
+         </void>
+         <void method="put">
+          <string>2</string>
+          <object class="ambit2.smarts.query.SmartsPatternAmbit">
+           <void property="smarts">
+            <string>[NX3]([CX4,#1,S])([CX4,#1,S])C(=[S])[S-]</string>
+           </void>
+          </object>
+         </void>
+        </void>
+       </object>
+      </void>
+      <void property="visited">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void property="title">
+   <string>Mark_Carbamates</string>
+  </void>
+ </object>
+</java>

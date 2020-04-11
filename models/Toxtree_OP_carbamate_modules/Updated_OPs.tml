@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_211" class="java.beans.XMLDecoder">
+ <object class="toxTree.tree.UserDefinedTree" id="UserDefinedTree0">
+  <void id="CategoriesList0" property="categories">
+   <void property="storage">
+    <void method="add">
+     <object class="toxTree.tree.categories.DefaultClass1" id="DefaultClass10"/>
+    </void>
+    <void method="add">
+     <object class="toxTree.tree.categories.DefaultClass2" id="DefaultClass20">
+      <void property="selected">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void property="explanation">
+   <string>Empty decision tree</string>
+  </void>
+  <void id="DecisionNodesList0" property="rules">
+   <void property="list">
+    <void method="add">
+     <object class="toxTree.tree.DecisionNode" id="DecisionNode0">
+      <void property="ID">
+       <string>0</string>
+      </void>
+      <void property="categories">
+       <void index="1">
+        <object idref="DefaultClass10"/>
+       </void>
+      </void>
+      <void property="explanation">
+       <string>Returns true if the query contains substructures specified by SMARTS patterns.</string>
+      </void>
+      <void property="nodes">
+       <void index="0">
+        <object class="toxTree.tree.DecisionNode" id="DecisionNode1">
+         <void property="ID">
+          <string>1</string>
+         </void>
+         <void property="categories">
+          <void index="0">
+           <object idref="DefaultClass20"/>
+          </void>
+          <void index="1">
+           <object idref="DefaultClass10"/>
+          </void>
+         </void>
+         <void property="explanation">
+          <string>Has any substructure of the list.</string>
+         </void>
+         <void property="num">
+          <int>2</int>
+         </void>
+         <void property="rule">
+          <object class="toxTree.tree.rules.RuleAnySubstructure">
+           <void property="ID">
+            <string>1</string>
+           </void>
+           <void property="num">
+            <int>2</int>
+           </void>
+          </object>
+         </void>
+         <void property="visited">
+          <boolean>true</boolean>
+         </void>
+        </object>
+       </void>
+      </void>
+      <void property="num">
+       <int>1</int>
+      </void>
+      <void property="rule">
+       <object class="toxTree.tree.rules.smarts.RuleSMARTSubstructure" id="RuleSMARTSubstructure0">
+        <void property="ID">
+         <string>0</string>
+        </void>
+        <void property="num">
+         <int>1</int>
+        </void>
+        <void property="smartsPatterns">
+         <void method="put">
+          <string>P=O_phosphonate_acid</string>
+          <object class="ambit2.smarts.query.SmartsPatternAmbit">
+           <void property="smarts">
+            <string>[#1]OP(=[O])(O[#1])C*</string>
+           </void>
+          </object>
+         </void>
+         <void method="put">
+          <string>P=O_phosphate_alkyl_ester and P=O_phosphate_thioate</string>
+          <object class="ambit2.smarts.query.SmartsPatternAmbit">
+           <void property="smarts">
+            <string>[O,S]P(=[O,SX])([O,S]C)[O,S]</string>
+           </void>
+          </object>
+         </void>
+         <void method="put">
+          <string>P(=O)N_phosphoramide_monoamidophosphate</string>
+          <object class="ambit2.smarts.query.SmartsPatternAmbit">
+           <void property="smarts">
+            <string>OP(=[O])([O,S])N[C&amp;!R, #1]</string>
+           </void>
+          </object>
+         </void>
+         <void method="put">
+          <string>P=O_phosphate_dithio</string>
+          <object class="ambit2.smarts.query.SmartsPatternAmbit">
+           <void property="smarts">
+            <string>OP(=[SX1])([S])[O,C]</string>
+           </void>
+          </object>
+         </void>
+         <void method="put">
+          <string>Trithio_phosphate</string>
+          <object class="ambit2.smarts.query.SmartsPatternAmbit">
+           <void property="smarts">
+            <string>SP(=O)(S)[S]</string>
+           </void>
+          </object>
+         </void>
+         <void method="put">
+          <string>Phosphonate_thio_dimethyl</string>
+          <object class="ambit2.smarts.query.SmartsPatternAmbit">
+           <void property="smarts">
+            <string>[#6]OP(=[SX1])([#6])O[#6]</string>
+           </void>
+          </object>
+         </void>
+         <void method="put">
+          <string>7</string>
+          <object class="ambit2.smarts.query.SmartsPatternAmbit">
+           <void property="smarts">
+            <string>CP(=O)(C)O</string>
+           </void>
+          </object>
+         </void>
+         <void method="put">
+          <string>8</string>
+          <object class="ambit2.smarts.query.SmartsPatternAmbit">
+           <void property="smarts">
+            <string>SP(S)S</string>
+           </void>
+          </object>
+         </void>
+        </void>
+       </object>
+      </void>
+      <void property="visited">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object idref="DecisionNode1"/>
+    </void>
+    <void method="add">
+     <object class="toxTree.tree.DecisionNode" id="DecisionNode2">
+      <void property="ID">
+       <string>2</string>
+      </void>
+      <void property="categories">
+       <void index="0">
+        <object idref="DefaultClass20"/>
+       </void>
+       <void index="1">
+        <object idref="DefaultClass10"/>
+       </void>
+      </void>
+      <void property="explanation">
+       <string>Has any substructure of the list.</string>
+      </void>
+      <void property="num">
+       <int>1</int>
+      </void>
+      <void property="rule">
+       <object class="toxTree.tree.rules.RuleAnySubstructure">
+        <void property="ID">
+         <string>2</string>
+        </void>
+        <void property="num">
+         <int>1</int>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void property="title">
+   <string>Mark_OPs</string>
+  </void>
+ </object>
+</java>

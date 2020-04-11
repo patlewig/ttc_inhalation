@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_161" class="java.beans.XMLDecoder">
+ <object class="toxTree.tree.UserDefinedTree" id="UserDefinedTree0">
+  <void id="CategoriesList0" property="categories">
+   <void property="storage">
+    <void method="add">
+     <object class="toxTree.tree.categories.DefaultClass1" id="DefaultClass10"/>
+    </void>
+    <void method="add">
+     <object class="toxTree.tree.categories.DefaultClass2" id="DefaultClass20"/>
+    </void>
+   </void>
+  </void>
+  <void property="explanation">
+   <string>Empty decision tree</string>
+  </void>
+  <void property="modified">
+   <boolean>true</boolean>
+  </void>
+  <void id="DecisionNodesList0" property="rules">
+   <void property="list">
+    <void method="add">
+     <object class="toxTree.tree.DecisionNode" id="DecisionNode0">
+      <void property="ID">
+       <string>0</string>
+      </void>
+      <void property="categories">
+       <void index="0">
+        <object idref="DefaultClass20"/>
+       </void>
+       <void index="1">
+        <object idref="DefaultClass10"/>
+       </void>
+      </void>
+      <void property="explanation">
+       <string>Mixed genotoxic and non genotoxic mechanism</string>
+      </void>
+      <void property="num">
+       <int>1</int>
+      </void>
+      <void property="rule">
+       <object class="mutant.rules.SA39_gen_and_nogen">
+        <void property="ID">
+         <string>0</string>
+        </void>
+        <void property="editable">
+         <boolean>true</boolean>
+        </void>
+        <void property="num">
+         <int>1</int>
+        </void>
+       </object>
+      </void>
+      <void property="visited">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void property="title">
+   <string>Steroids</string>
+  </void>
+ </object>
+</java>
