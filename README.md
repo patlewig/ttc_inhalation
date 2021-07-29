@@ -4,7 +4,7 @@ TTC
 Investigating the feasibility of deriving TTC values for an inhalation route of entry.
 Accompanying manuscript:
 Nelms MD, Patlewicz G. Derivation of new Threshold of Toxicological Concern values for exposure via inhalation for environmentally-relevant chemicals. Front. Toxicol. doi: 10.3389/ftox.2020.580347 
-Underlying Data can be found at: ftp://newftp.epa.gov/Computational_Toxicology_Data/CCTE_Publication_Data/CCED_Publication_Data/PatlewiczGrace/Frontiers-TTC/
+Underlying Data can be found at: https://gaftp.epa.gov/Comptox/CCTE_Publication_Data/CCED_Publication_Data/PatlewiczGrace/Frontiers-TTC/
 
 Project Organization
 ------------
